@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_apimusic/models/music.dart';
 import 'package:flutter_application_apimusic/services/api_music.dart';
-import 'package:flutter_application_apimusic/services/api_music.dart';
-import 'package:flutter_application_apimusic/models/music.dart';
 import 'MusicDetailPage.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();

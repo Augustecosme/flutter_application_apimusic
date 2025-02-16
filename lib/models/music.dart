@@ -27,32 +27,32 @@
 
  factory MusicApiData.fromJson(Map<String, dynamic>json){
   return MusicApiData(
-    id: json['id'],
-    title: json['title'],
-    album: json['album'],
-    artist: json['artist'],
-    genre: json['genre'],
-    source: json['source'],
-    image: json['imge'],
-    trackNumber: json['trackNumber'],
-    totalTrackCount: json['totalTrackCount'],
-    duration: json['duration'],
-    site: json['site'],
+    id: json['id'] as String,
+    title: json['title'] as String,
+    album: json['album'] as String,
+    artist: json['artist'] as String,
+    genre: json['genre'] as String,
+    source: json['source'] as String,
+    image: json['imge'] as String,
+    trackNumber: json['trackNumber'] as int,
+    totalTrackCount: json['totalTrackCount'] as int,
+    duration: json['duration'] as int,
+    site: json['site'] as String,
   );
  }
   Map<String, dynamic> toJson(){
   final Map<String, dynamic> data = new Map<String, dynamic>();
-   data['id'] = this.id;
-    data['title'] = this.title;
-    data['album'] = this.album;
-    data['artist'] = this.artist;
-    data['genre'] = this.genre;
-    data['source'] = this.source;
-    data['image'] = this.image;
-    data['trackNumber'] = this.trackNumber;
-    data['totalTrackCount'] = this.totalTrackCount;
-    data['duration'] = this.duration;
-    data['site'] = this.site;
+   data['id'] = id;
+    data['title'] = title;
+    data['album'] = album;
+    data['artist'] = artist;
+    data['genre'] = genre;
+    data['source'] = source;
+    data['image'] = image;
+    data['trackNumber'] = trackNumber;
+    data['totalTrackCount'] = totalTrackCount;
+    data['duration'] = duration;
+    data['site'] = site;
     return data;
   }
 
